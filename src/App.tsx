@@ -6,6 +6,8 @@ import SemesterView from './pages/SemesterView';
 import ModuleView from './pages/ModuleView';
 import FiliereSelection from './pages/FiliereSelection';
 import ElementFilesPage from './pages/ElementFilesPage';
+import BlogHome from './pages/BlogHome';
+import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
 import LoadingSpinner from './components/LoadingSpinner';
 
@@ -36,6 +38,8 @@ function App() {
             <Route path="/semester/:semesterNumber/module/:moduleId" element={<ModuleView />} />
             <Route path="/semester/:semesterNumber/module/:moduleId/element/:elementId" element={<ElementFilesPage />} />
             <Route path="/select-filiere" element={<FiliereSelection />} />
+            <Route path="/blog" element={<BlogHome />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

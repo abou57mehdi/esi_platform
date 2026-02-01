@@ -1,5 +1,6 @@
 // GitHub Pages base URL for object storage
-export const GITHUB_PAGES_BASE_URL = "https://abou57mehdi.github.io/objectorage";
+// Using raw.githubusercontent.com to bypass CORS/Caching issues during development
+export const GITHUB_PAGES_BASE_URL = "https://raw.githubusercontent.com/abou57mehdi/esii-objectorage/master";
 
 // Helper to construct PDF URLs
 export const getPdfUrl = (path: string, filename: string) => {

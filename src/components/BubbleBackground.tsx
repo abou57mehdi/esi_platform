@@ -18,7 +18,7 @@ const BubbleBackground = () => {
 
     // Particle system
     const particles: Particle[] = [];
-    const particleCount = 30;
+    const particleCount = 80;
 
     class Particle {
       x: number;
@@ -33,12 +33,12 @@ const BubbleBackground = () => {
       constructor(canvasWidth: number, canvasHeight: number) {
         this.x = Math.random() * canvasWidth;
         this.y = Math.random() * canvasHeight;
-        this.originalSize = Math.random() * 5 + 2; // Larger bubbles
+        this.originalSize = Math.random() * 8 + 3; // Even larger bubbles
         this.size = this.originalSize;
-        this.speedX = Math.random() * 0.8 - 0.4; // Slightly faster movement
-        this.speedY = Math.random() * 0.8 - 0.4;
-        this.opacity = Math.random() * 0.4 + 0.2; // More opaque bubbles
-        this.color = `rgba(59, 130, 246, ${this.opacity})`; // Blue with varying opacity
+        this.speedX = Math.random() * 0.4 - 0.2; // Slow and smooth movement
+        this.speedY = Math.random() * 0.4 - 0.2;
+        this.opacity = Math.random() * 0.6 + 0.3; // Higher opacity for more intense blue
+        this.color = `rgba(29, 78, 216, ${this.opacity})`; // Deeper Blue (Tailwind blue-700)
       }
 
       update(canvasWidth: number, canvasHeight: number) {
@@ -48,26 +48,20 @@ const BubbleBackground = () => {
         // Bounce off edges
         if (this.x <= 0 || this.x >= canvasWidth) this.speedX *= -1;
         if (this.y <= 0 || this.y >= canvasHeight) this.speedY *= -1;
-
-        // Add pulsing effect
-        const pulseRate = 0.015;
-        this.size = this.originalSize + Math.sin(Date.now() * pulseRate + this.x * 0.01) * 1.0;
       }
 
       draw(ctx: CanvasRenderingContext2D) {
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-
         // Add gradient for a more 3D effect
         const gradient = ctx.createRadialGradient(
           this.x, this.y, 0,
           this.x, this.y, this.size
         );
-        gradient.addColorStop(0, `rgba(147, 197, 253, ${this.opacity})`); // Lighter blue center
-        gradient.addColorStop(1, `rgba(59, 130, 246, ${this.opacity * 0.5})`); // More transparent edge
+        gradient.addColorStop(0, `rgba(59, 130, 246, ${this.opacity})`); // Vibrant blue center
+        gradient.addColorStop(1, `rgba(29, 78, 216, ${this.opacity * 0.4})`); // Deep blue edge
 
         ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
       }
     }
@@ -106,7 +100,7 @@ const BubbleBackground = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-30"
+      className="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 opacity-50"
     />
   );
 };

@@ -3,7 +3,28 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ArrowLeft, FileText, Download, Eye } from 'lucide-react';
 import { useFiliereContext } from '../context/FiliereContext';
 import { getModulesBySemester } from '../data/modules';
-import { getPdfUrl } from '../utils/r2Config';
+import { GITHUB_PAGES_BASE_URL } from '../utils/r2Config';
+
+// Helper to normalize module names to match folder structure
+const normalizeName = (name: string) => {
+  return name.trim()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Remove accents
+    .replace(/[^a-zA-Z0-9]/g, '_') // Replace all non-alphanumeric chars with _
+    .replace(/_+/g, '_') // Replace multiple underscores with one
+    .replace(/^_|_$/g, ''); // Trim underscores from ends
+};
+
+interface ManifestFile {
+  name: string;
+  path: string;
+  size: number;
+  sizeFormatted: string;
+  lastModified: string;
+}
+
+interface Manifest {
+  [directoryPath: string]: ManifestFile[];
+}
 
 const ElementFilesPage = () => {
   const { semesterNumber, moduleId, elementId } = useParams<{ 
@@ -14,7 +35,7 @@ const ElementFilesPage = () => {
   const navigate = useNavigate();
   const { selectedFiliere } = useFiliereContext();
   
-  const [files, setFiles] = useState<{name: string, size: number, path: string}[]>([]);
+  const [files, setFiles] = useState<ManifestFile[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -26,87 +47,77 @@ const ElementFilesPage = () => {
 
   useEffect(() => {
     const fetchFiles = async () => {
+      if (!module || !element) return;
+
       try {
         setLoading(true);
+        const manifestUrl = `${GITHUB_PAGES_BASE_URL}/manifest.json`;
+        console.log(`[Debug] Fetching manifest from: ${manifestUrl}`);
 
-        // Construct the path based on the element's pdfPath
-        if (element && element.pdfPath) {
-          // Extract the base path from the pdfPath
-          const basePath = element.pdfPath.substring(0, element.pdfPath.lastIndexOf('/') + 1);
+        const response = await fetch(manifestUrl);
+        if (!response.ok) {
+          throw new Error(`Status: ${response.status}`);
+        }
+        
+        const fullManifest = await response.json();
+        const manifest = fullManifest.documents || {};
+        const manifestKeys = Object.keys(manifest);
+        
+        const filiereFolder = (selectedFiliere || 'ISITD').toUpperCase();
+        const semesterFolder = `S${semester}`;
+        const normalizedModuleName = normalizeName(module.name);
+        
+        // Base path for the module
+        const moduleBasePath = `${filiereFolder}/${semesterFolder}/${normalizedModuleName}`;
+        // Specific path for the element (elt1 or elt2)
+        const elementSpecificPath = `${moduleBasePath}/elt${element.number}`;
+        
+        console.log(`[Debug] Target Element Path: "${elementSpecificPath}"`);
 
-          // Fetch the directory listing from GitHub Pages
-          // Since GitHub Pages doesn't provide directory listings, we'll need to maintain a manifest file
-          // For now, we'll use a heuristic approach to determine the files in the directory
+        // Find keys that match the element specific path
+        const matchingKeys = manifestKeys.filter(key => 
+          key === elementSpecificPath || key.startsWith(`${elementSpecificPath}/`)
+        );
 
-          // In a real implementation, you'd have a manifest.json file in each directory
-          // that lists all the files. For now, we'll use the known structure.
+        let foundFiles: ManifestFile[] = [];
+        matchingKeys.forEach(key => {
+          const filesInDir = manifest[key].map(f => ({
+            ...f,
+            path: f.path.startsWith('http') ? f.path : `${GITHUB_PAGES_BASE_URL}/${f.path}`
+          }));
+          foundFiles = [...foundFiles, ...filesInDir];
+        });
 
-          // For demonstration purposes, let's create a function that would fetch from a manifest
-          // if it existed, and fall back to a known structure
-          const fetchFromManifest = async (path: string) => {
-            try {
-              // In a real implementation, you'd fetch a manifest.json file
-              // that contains the list of files in the directory
-              // const response = await fetch(`${GITHUB_PAGES_BASE_URL}/${path}/manifest.json`);
-              // if (response.ok) {
-              //   const manifest = await response.json();
-              //   return manifest.files.map((file: any) => ({
-              //     name: file.name,
-              //     size: file.size,
-              //     path: `${GITHUB_PAGES_BASE_URL}/${path}/${file.name}`
-              //   }));
-              // }
-
-              // For now, we'll use the known structure from your docs folder
-              // This would be replaced with actual manifest fetching in production
-              if (path.includes('elt1')) {
-                return [
-                  { name: 'hadoop_intro.pdf', size: 225510, path: getPdfUrl('isitd/semestre_cinq/technologies_de_données_massives/elt1', 'hadoop_intro.pdf') },
-                  { name: 'hadoop_ch2.pdf', size: 288380, path: getPdfUrl('isitd/semestre_cinq/technologies_de_données_massives/elt1', 'hadoop_ch2.pdf') },
-                  { name: 'hadoop_ch3.pdf', size: 279169, path: getPdfUrl('isitd/semestre_cinq/technologies_de_données_massives/elt1', 'hadoop_ch3.pdf') }
-                ];
-              } else if (path.includes('elt2')) {
-                return [
-                  { name: 'spark_overview.pdf', size: 198756, path: getPdfUrl('isitd/semestre_cinq/technologies_de_données_massives/elt2', 'spark_overview.pdf') },
-                  { name: 'spark_advanced.pdf', size: 245678, path: getPdfUrl('isitd/semestre_cinq/technologies_de_données_massives/elt2', 'spark_advanced.pdf') }
-                ];
-              } else {
-                // Fallback to the single file if we can't determine the directory contents
-                return [
-                  { name: element.pdfPath.split('/').pop() || 'document.pdf', size: 102400, path: element.pdfPath }
-                ];
-              }
-            } catch (manifestErr) {
-              console.warn('Could not fetch manifest, using fallback:', manifestErr);
-              // Fallback to the single file if manifest doesn't exist
-              return [
-                { name: element.pdfPath.split('/').pop() || 'document.pdf', size: 102400, path: element.pdfPath }
-              ];
-            }
-          };
-
-          const filesList = await fetchFromManifest(basePath);
-          setFiles(filesList);
+        // If no files found in eltX folder, try looking in the module base folder as a fallback
+        if (foundFiles.length === 0) {
+          console.log(`[Debug] No files in ${elementSpecificPath}, checking base folder: ${moduleBasePath}`);
+          const baseKeys = manifestKeys.filter(key => key === moduleBasePath);
+          baseKeys.forEach(key => {
+            const filesInDir = manifest[key].map(f => ({
+              ...f,
+              path: f.path.startsWith('http') ? f.path : `${GITHUB_PAGES_BASE_URL}/${f.path}`
+            }));
+            foundFiles = [...foundFiles, ...filesInDir];
+          });
         }
 
+        setFiles(foundFiles);
         setLoading(false);
       } catch (err) {
-        setError('Erreur lors du chargement des fichiers');
+        console.error('[Debug] Error:', err);
+        setFiles([]); 
         setLoading(false);
-        console.error(err);
       }
     };
 
     fetchFiles();
-  }, [element]);
+  }, [module, element, semester, selectedFiliere]);
 
   const handleView = (filePath: string) => {
-    // Open PDF in new tab/window
     window.open(filePath, '_blank');
   };
 
   const handleDownload = (filePath: string) => {
-    // Trigger download
     const link = document.createElement('a');
     link.href = filePath;
     link.download = filePath.split('/').pop() || 'document.pdf';
@@ -121,22 +132,6 @@ const ElementFilesPage = () => {
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto"></div>
           <p className="mt-4 text-gray-600">Chargement des fichiers...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="text-center">
-          <p className="text-red-500">{error}</p>
-          <button 
-            onClick={() => navigate(-1)}
-            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-          >
-            Retour
-          </button>
         </div>
       </div>
     );
@@ -169,7 +164,8 @@ const ElementFilesPage = () => {
             {files.length === 0 ? (
               <div className="text-center py-8">
                 <FileText className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <p className="text-gray-500">Aucun fichier disponible pour cet élément</p>
+                <p className="text-gray-500">Aucun fichier trouvé pour ce module.</p>
+                <p className="text-sm text-gray-400 mt-2">Dossier attendu: { (selectedFiliere || 'ISITD').toUpperCase() }/S{semester}/{module ? normalizeName(module.name) : '...'}</p>
               </div>
             ) : (
               <div className="space-y-4">
@@ -183,22 +179,15 @@ const ElementFilesPage = () => {
                       <div>
                         <h3 className="font-medium text-gray-900">{file.name}</h3>
                         <p className="text-sm text-gray-500">
-                          {(file.size / 1024 / 1024).toFixed(2)} MB
+                          {file.sizeFormatted}
                         </p>
                       </div>
                     </div>
                     
                     <div className="flex space-x-2">
                       <button
-                        onClick={() => handleView(file.path)}
-                        className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700"
-                      >
-                        <Eye className="h-4 w-4 mr-1" />
-                        Voir
-                      </button>
-                      <button
                         onClick={() => handleDownload(file.path)}
-                        className="flex items-center px-4 py-2 bg-green-600 text-white rounded-md text-sm font-medium hover:bg-green-700"
+                        className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-colors shadow-sm"
                       >
                         <Download className="h-4 w-4 mr-1" />
                         Télécharger

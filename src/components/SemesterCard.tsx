@@ -1,6 +1,10 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { BookOpen, Award, Briefcase, Shield, Brain, Zap, Library } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { 
+  Award, Shield, Brain, Zap, Library, 
+  Binary, Code2, Layers, Cpu, Rocket,
+  BookMarked, GitFork, Star, Circle, CalendarDays
+} from 'lucide-react';
 import { useFiliereContext } from '../context/FiliereContext';
 import { useProgress } from '../hooks/useProgress';
 
@@ -20,45 +24,77 @@ const SemesterCard = ({ semester, requiresFiliere = false, filiereSelected = fal
   const getSemesterInfo = () => {
     switch(semester) {
       case 1:
-        return { year: "1CS", desc: "Common Core - Year 1" };
+        return { 
+          year: "1CS", 
+          desc: "Common Core - Year 1",
+          color: "text-blue-400",
+          dotColor: "bg-blue-400"
+        };
       case 2:
-        return { year: "1CS", desc: "Common Core - Year 1" };
+        return { 
+          year: "1CS", 
+          desc: "Common Core - Year 1",
+          color: "text-indigo-400",
+          dotColor: "bg-indigo-400"
+        };
       case 3:
-        return { year: "2CS", desc: "Common Core - Year 2" };
+        return { 
+          year: "2CS", 
+          desc: "Common Core - Year 2",
+          color: "text-purple-400",
+          dotColor: "bg-purple-400"
+        };
       case 4:
-        return { year: "2CS", desc: "Common Core - Year 2" };
+        return { 
+          year: "2CS", 
+          desc: "Common Core - Year 2",
+          color: "text-cyan-400",
+          dotColor: "bg-cyan-400"
+        };
       case 5:
-        return { year: "3CS", desc: "Specialization" };
+        return { 
+          year: "3CS", 
+          desc: "Specialization",
+          color: "text-amber-400",
+          dotColor: "bg-amber-400"
+        };
       case 6:
-        return { year: "3CS", desc: "PFE - Internship" };
+        return { 
+          year: "3CS", 
+          desc: "PFE - Internship",
+          color: "text-emerald-400",
+          dotColor: "bg-emerald-400"
+        };
       default:
-        return { year: "", desc: "" };
+        return { 
+          year: "", 
+          desc: "",
+          color: "text-gray-400",
+          dotColor: "bg-gray-400"
+        };
     }
   };
 
-  const { year, desc } = getSemesterInfo();
+  const { year, desc, color, dotColor } = getSemesterInfo();
 
   // Get appropriate icon based on semester
-  const getIcon = () => {
-    if (semester === 6) return <Briefcase className="h-10 w-10 text-blue-600" />;
+  const getIcon = (className: string) => {
+    if (semester === 6) return <Rocket className={className} />;
     if (semester === 5) {
-      // Show different icon based on selected filière
-      if (selectedFiliere === 'icsds') return <Brain className="h-10 w-10 text-blue-600" />;
-      if (selectedFiliere === 'isitd') return <Zap className="h-10 w-10 text-green-600" />;
-      if (selectedFiliere === 'iind') return <Library className="h-10 w-10 text-orange-600" />;
-      if (selectedFiliere === 'issic') return <Shield className="h-10 w-10 text-red-600" />;
-      return <Award className="h-10 w-10 text-purple-600" />;
+      if (selectedFiliere === 'icsds') return <Brain className={className} />;
+      if (selectedFiliere === 'isitd') return <Zap className={className} />;
+      if (selectedFiliere === 'iind') return <Library className={className} />;
+      if (selectedFiliere === 'issic') return <Shield className={className} />;
+      return <Award className={className} />;
     }
-    return <BookOpen className="h-10 w-10 text-indigo-600" />;
+    return <BookMarked className={className} />;
   };
 
   // Handle click based on requirements
   const handleClick = () => {
     if (semester === 5 && requiresFiliere && !filiereSelected) {
-      // Navigate to filière selection instead of semester view
       navigate('/select-filiere');
     } else if (semester !== 5 || filiereSelected) {
-      // Navigate to semester page for all other cases
       navigate(`/semester/${semester}`);
     }
   };
@@ -69,38 +105,45 @@ const SemesterCard = ({ semester, requiresFiliere = false, filiereSelected = fal
       <div
         onClick={handleClick}
         className="
-          relative overflow-hidden bg-white/70 backdrop-blur-md
-          border-2 border-dashed border-amber-300/60 rounded-2xl p-6 cursor-pointer
-          hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2
-          shadow-lg hover:bg-white/80
+          flex flex-col min-h-[220px] h-full
+          bg-white/60 backdrop-blur-md rounded-md border border-amber-300/50
+          p-6 cursor-pointer transition-all duration-200
+          hover:shadow-lg hover:border-amber-400 hover:bg-white/70
+          group relative overflow-hidden
         "
       >
-        <div className="absolute top-0 right-0 w-32 h-32 -mt-16 -mr-16 bg-amber-200/30 rounded-full blur-2xl"></div>
-        <div className="text-center relative z-10">
-          <div className="flex justify-center mb-4">
-            <div className="p-4 bg-amber-100/50 rounded-2xl shadow-inner">
-              <Award className="h-10 w-10 text-amber-600" />
-            </div>
+        <div className="flex items-center gap-2 mb-3 text-amber-600">
+          <Award className="h-6 w-6" />
+          <span className="font-semibold text-base hover:underline cursor-pointer">
+            esi/semestre-05-specialisation
+          </span>
+          <span className="ml-auto px-2.5 py-1 rounded-full border border-amber-200 text-xs font-medium text-amber-700 bg-amber-50">
+            Private
+          </span>
+        </div>
+        
+        <p className="text-gray-600 text-sm mb-6 line-clamp-3">
+          Specialization year. Access restricted. Please select a filière to proceed with the curriculum and access modules.
+        </p>
+
+        <div className="mt-auto pt-4 flex items-center gap-5 text-xs text-gray-500">
+          <div className="flex items-center gap-1.5">
+             <span className="w-3.5 h-3.5 rounded-full bg-amber-400"></span>
+             <span className="text-sm">Specialization</span>
           </div>
-          <h3 className="text-2xl font-bold mb-1 text-gray-800">Semestre 5</h3>
-          <p className="text-amber-600 font-semibold text-sm mb-3">3CS - Spécialisation</p>
-          <div className="bg-amber-100/40 py-1.5 px-3 rounded-full inline-block text-amber-700 mb-4 font-bold text-xs uppercase tracking-wider">
-            ⚠️ Filière Requise
-          </div>
-          <div>
-            <button className="
-              px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600
-              text-white rounded-xl hover:from-amber-600 hover:to-orange-700
-              text-sm font-bold shadow-lg hover:shadow-xl transition-all
-            "
-            onClick={(e) => {
-              e.stopPropagation(); // Prevent event bubbling to parent div
-              navigate('/select-filiere');
-            }}>
-              Sélectionner une filière
-            </button>
+          <div className="flex items-center gap-1.5">
+            <Star className="h-4 w-4" />
+            <span className="text-sm">Required</span>
           </div>
         </div>
+        
+        <button className="
+          mt-6 w-full py-2 bg-amber-50 border border-amber-200 rounded-md
+          text-amber-700 text-sm font-semibold
+          hover:bg-amber-100 hover:border-amber-300 transition-colors
+        ">
+          Select Filière
+        </button>
       </div>
     );
   }
@@ -109,37 +152,63 @@ const SemesterCard = ({ semester, requiresFiliere = false, filiereSelected = fal
     <div
       onClick={handleClick}
       className="
-        relative overflow-hidden bg-white/60 backdrop-blur-lg
-        border border-white/50 rounded-2xl p-6 cursor-pointer
-        hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2
-        shadow-xl hover:bg-white/80 group
+        flex flex-col min-h-[220px] h-full
+        bg-white/40 backdrop-blur-md rounded-md border border-white/40
+        p-6 cursor-pointer transition-all duration-200
+        hover:shadow-lg hover:border-blue-400/50 hover:bg-white/60
+        group
       "
     >
-      <div className="absolute top-0 right-0 w-32 h-32 -mt-16 -mr-16 bg-blue-400/20 rounded-full blur-3xl group-hover:bg-blue-400/30 transition-colors"></div>
-      <div className="absolute bottom-0 left-0 w-24 h-24 -mb-12 -ml-12 bg-indigo-400/20 rounded-full blur-3xl"></div>
+      {/* Header */}
+      <div className="flex items-center gap-2 mb-3">
+        {getIcon(`h-6 w-6 ${color}`)}
+        <span className={`font-semibold text-base hover:underline cursor-pointer text-gray-800 group-hover:text-blue-600`}>
+          esi/semestre-0{semester}
+        </span>
+        <span className="ml-auto px-2.5 py-1 rounded-full border border-gray-200 text-xs font-medium text-gray-500 bg-white/50">
+          Public
+        </span>
+      </div>
 
-      <div className="relative z-10 text-center">
-        <div className="flex justify-center mb-4">
-          <div className="p-4 bg-white/40 rounded-2xl shadow-sm group-hover:scale-110 transition-transform duration-500">
-            {getIcon()}
-          </div>
+      {/* Description */}
+      <p className="text-gray-600 text-sm mb-6 line-clamp-3 font-medium">
+        {desc}. Contains modules, resources, and materials for the academic year {year}. Explore the specialized curriculum for this period.
+      </p>
+
+      {/* Footer / Stats */}
+      <div className="mt-auto flex items-center gap-5 text-sm text-gray-500">
+        <div className="flex items-center gap-1.5">
+           <span className={`w-3.5 h-3.5 rounded-full ${dotColor}`}></span>
+           <span className="font-medium text-gray-700">{year}</span>
         </div>
-        <h3 className="text-2xl font-bold mb-1 text-gray-800">Semestre {semester}</h3>
-        <p className="text-blue-600 font-bold text-sm mb-1">{year}</p>
-        <p className="text-gray-500 text-sm mb-4 font-medium">{desc}</p>
-
+        
         {progress > 0 && (
-          <div className="mt-4">
-            <div className="w-full bg-gray-200/50 rounded-full h-3 backdrop-blur-sm overflow-hidden border border-white/20">
-              <div
-                className="bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-600 h-full rounded-full transition-all duration-1000 ease-out shadow-[0_0_10px_rgba(59,130,246,0.5)]"
-                style={{ width: `${progress}%` }}
-              ></div>
-            </div>
-            <p className="text-xs text-gray-500 mt-2 font-bold uppercase tracking-tighter">{progress}% complété</p>
+          <div className="flex items-center gap-1.5">
+             <Star className="h-4 w-4 hover:text-yellow-500 transition-colors" />
+             <span>{progress}%</span>
           </div>
         )}
+        
+        <div className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+          <GitFork className="h-4 w-4" />
+          <span>{semester * 4}</span>
+        </div>
+
+        <span className="ml-auto text-xs opacity-70 flex items-center gap-1">
+           <CalendarDays className="h-3 w-3" />
+           Latest
+        </span>
       </div>
+
+      {/* Progress Line (GitHub Language Bar style) */}
+      {progress > 0 && (
+        <div className="w-full h-2 bg-gray-200 rounded-full mt-4 overflow-hidden border border-gray-300/20">
+          <div 
+            className={`h-full ${dotColor} opacity-80`} 
+            style={{ width: `${progress}%` }}
+          ></div>
+        </div>
+      )}
     </div>
   );
 };

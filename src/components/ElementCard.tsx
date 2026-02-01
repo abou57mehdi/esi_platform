@@ -9,9 +9,6 @@ interface ElementCardProps {
     number: number;
     title: string;
     pdfPath: string;
-    pages: number;
-    fileSize: string;
-    topics: string[];
   };
   moduleId: string;
   semesterNumber: number;
@@ -49,22 +46,6 @@ const ElementCard = ({ element, moduleId, semesterNumber }: ElementCardProps) =>
             <StarOff className="h-5 w-5" />
           )}
         </button>
-      </div>
-      
-      <div className="mt-4 flex flex-wrap gap-2">
-        {element.topics.slice(0, 3).map((topic, index) => (
-          <span 
-            key={index} 
-            className="px-2.5 py-1 bg-white/50 text-gray-700 text-xs font-medium rounded-md border border-white/20"
-          >
-            {topic}
-          </span>
-        ))}
-        {element.topics.length > 3 && (
-          <span className="px-2.5 py-1 bg-white/50 text-gray-700 text-xs font-medium rounded-md border border-white/20">
-            +{element.topics.length - 3}
-          </span>
-        )}
       </div>
       
       <div className="mt-5">

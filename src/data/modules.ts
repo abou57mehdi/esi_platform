@@ -19,18 +19,12 @@ export const commonModules = {
           number: 1,
           title: "Architecture des ordinateurs",
           pdfPath: getPdfUrl("common/S1", "ARCHI-SE101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Architecture Von Neumann", "Processeurs", "Mémoires"]
         },
         {
           id: "archi-se101-e2",
           number: 2,
           title: "Systèmes d'exploitation",
           pdfPath: getPdfUrl("common/S1", "ARCHI-SE101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Processus", "Gestion mémoire", "Systèmes de fichiers"]
         }
       ]
     },
@@ -50,18 +44,12 @@ export const commonModules = {
           number: 1,
           title: "Analyse et Algèbre Linéaire",
           pdfPath: getPdfUrl("common/S1", "MATH101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Matrices", "Espaces vectoriels", "Dérivées"]
         },
         {
           id: "math101-e2",
           number: 2,
           title: "Équations différentielles",
           pdfPath: getPdfUrl("common/S1", "MATH101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["EDO", "Solutions numériques", "Applications"]
         }
       ]
     },
@@ -81,18 +69,12 @@ export const commonModules = {
           number: 1,
           title: "Introduction à l'algorithmique",
           pdfPath: getPdfUrl("common/S1", "ALGO-PROG101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Variables", "Structures conditionnelles", "Boucles"]
         },
         {
           id: "algo-prog101-e2",
           number: 2,
           title: "Structures de données simples",
           pdfPath: getPdfUrl("common/S1", "ALGO-PROG101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Tableaux", "Chaînes de caractères", "Fonctions"]
         }
       ]
     },
@@ -112,18 +94,12 @@ export const commonModules = {
           number: 1,
           title: "XML et langages associés",
           pdfPath: getPdfUrl("common/S1", "GED-DS101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["XML", "DTD", "Schéma XML"]
         },
         {
           id: "ged-ds101-e2",
           number: 2,
           title: "Gestion électronique des documents",
           pdfPath: getPdfUrl("common/S1", "GED-DS101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["GED", "Workflow", "Archivage"]
         }
       ]
     },
@@ -143,18 +119,12 @@ export const commonModules = {
           number: 1,
           title: "Fondements des réseaux",
           pdfPath: getPdfUrl("common/S1", "RESEAU101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Modèle OSI", "TCP/IP", "Topologies"]
         },
         {
           id: "reseau101-e2",
           number: 2,
           title: "Protocoles et services",
           pdfPath: getPdfUrl("common/S1", "RESEAU101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["IP", "TCP/UDP", "DNS", "DHCP"]
         }
       ]
     },
@@ -174,18 +144,12 @@ export const commonModules = {
           number: 1,
           title: "Programmation linéaire",
           pdfPath: getPdfUrl("common/S1", "RO101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Formulation", "Méthode du simplexe", "Dualité"]
         },
         {
           id: "ro101-e2",
           number: 2,
           title: "Graphes et optimisation",
           pdfPath: getPdfUrl("common/S1", "RO101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Graphes", "Chemins optimaux", "Arbres couvrants"]
         }
       ]
     },
@@ -205,18 +169,12 @@ export const commonModules = {
           number: 1,
           title: "Microéconomie",
           pdfPath: getPdfUrl("common/S1", "ECO101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Offre et demande", "Élasticité", "Théorie du consommateur"]
         },
         {
           id: "eco101-e2",
           number: 2,
           title: "Macroéconomie",
           pdfPath: getPdfUrl("common/S1", "ECO101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["PIB", "Inflation", "Emploi"]
         }
       ]
     },
@@ -236,18 +194,12 @@ export const commonModules = {
           number: 1,
           title: "Anglais technique",
           pdfPath: getPdfUrl("common/S1", "ANG-TEC101-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Vocabulaire technique", "Lecture scientifique", "Communication"]
         },
         {
           id: "ang-tec101-e2",
           number: 2,
           title: "Communication professionnelle",
           pdfPath: getPdfUrl("common/S1", "ANG-TEC101-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Présentations", "CV", "Entretiens"]
         }
       ]
     }
@@ -269,18 +221,12 @@ export const commonModules = {
           number: 1,
           title: "Modélisation conceptuelle",
           pdfPath: getPdfUrl("common/S2", "ACBD201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Modèle entité-association", "Normalisation", "Diagrammes UML"]
         },
         {
           id: "acbd201-e2",
           number: 2,
           title: "Modélisation logique et physique",
           pdfPath: getPdfUrl("common/S2", "ACBD201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["SQL", "Contraintes", "Index"]
         }
       ]
     },
@@ -300,18 +246,12 @@ export const commonModules = {
           number: 1,
           title: "Probabilités",
           pdfPath: getPdfUrl("common/S2", "PROB-STAT201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Espaces probabilisés", "Variables aléatoires", "Lois usuelles"]
         },
         {
           id: "prob-stat201-e2",
           number: 2,
           title: "Statistiques inférentielles",
           pdfPath: getPdfUrl("common/S2", "PROB-STAT201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Estimation", "Tests d'hypothèses", "Régression"]
         }
       ]
     },
@@ -331,18 +271,12 @@ export const commonModules = {
           number: 1,
           title: "HTML, CSS et JavaScript",
           pdfPath: getPdfUrl("common/S2", "PROG-WEB201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Structure HTML", "Stylisation CSS", "DOM"]
         },
         {
           id: "prog-web201-e2",
           number: 2,
           title: "Frameworks web",
           pdfPath: getPdfUrl("common/S2", "PROG-WEB201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["React", "Vue.js", "Angular"]
         }
       ]
     },
@@ -362,18 +296,12 @@ export const commonModules = {
           number: 1,
           title: "Structures de données complexes",
           pdfPath: getPdfUrl("common/S2", "ALGO-ADV201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Listes chaînées", "Piles", "Files", "Arbres"]
         },
         {
           id: "algo-adv201-e2",
           number: 2,
           title: "Algorithmes avancés",
           pdfPath: getPdfUrl("common/S2", "ALGO-ADV201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Diviser pour régner", "Programmation dynamique", "Gloutons"]
         }
       ]
     },
@@ -393,18 +321,12 @@ export const commonModules = {
           number: 1,
           title: "E-services et architectures orientées services",
           pdfPath: getPdfUrl("common/S2", "ESERV-GC201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["SOA", "Web Services", "REST", "SOAP"]
         },
         {
           id: "eserv-gc201-e2",
           number: 2,
           title: "CMS et gestion de contenu",
           pdfPath: getPdfUrl("common/S2", "ESERV-GC201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["WordPress", "Drupal", "SharePoint"]
         }
       ]
     },
@@ -424,18 +346,12 @@ export const commonModules = {
           number: 1,
           title: "Stratégie de l'intangible",
           pdfPath: getPdfUrl("common/S2", "GCI201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Patrimoine immatériel", "Veille stratégique", "Innovation"]
         },
         {
           id: "gci201-e2",
           number: 2,
           title: "Valorisation des actifs incorporels",
           pdfPath: getPdfUrl("common/S2", "GCI201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Propriété intellectuelle", "Marques", "Brevets"]
         }
       ]
     },
@@ -455,18 +371,12 @@ export const commonModules = {
           number: 1,
           title: "Fondements du management",
           pdfPath: getPdfUrl("common/S2", "MGT201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Leadership", "Communication", "Organisation"]
         },
         {
           id: "mgt201-e2",
           number: 2,
           title: "Management de projets",
           pdfPath: getPdfUrl("common/S2", "MGT201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Gantt", "PERT", "Agilité"]
         }
       ]
     },
@@ -486,18 +396,12 @@ export const commonModules = {
           number: 1,
           title: "Anglais technique avancé",
           pdfPath: getPdfUrl("common/S2", "ANG-TEC201-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Documentation technique", "Normes", "Publications"]
         },
         {
           id: "ang-tec201-e2",
           number: 2,
           title: "Communication interculturelle",
           pdfPath: getPdfUrl("common/S2", "ANG-TEC201-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Communication internationale", "Culture d'entreprise"]
         }
       ]
     }
@@ -519,18 +423,12 @@ export const commonModules = {
           number: 1,
           title: "Principes de l'orienté objet",
           pdfPath: getPdfUrl("common/S3", "CPO301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Classes", "Objets", "Encapsulation"]
         },
         {
           id: "cpo301-e2",
           number: 2,
           title: "Héritage et polymorphisme",
           pdfPath: getPdfUrl("common/S3", "CPO301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Héritage", "Polymorphisme", "Abstraction"]
         }
       ]
     },
@@ -550,18 +448,12 @@ export const commonModules = {
           number: 1,
           title: "Bases de données avancées",
           pdfPath: getPdfUrl("common/S3", "BDA-ADMIN301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["SQL avancé", "Optimisation", "Transactions"]
         },
         {
           id: "bda-admin301-e2",
           number: 2,
           title: "Administration des bases de données",
           pdfPath: getPdfUrl("common/S3", "BDA-ADMIN301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["SGBD", "Sauvegarde", "Sécurité"]
         }
       ]
     },
@@ -581,18 +473,12 @@ export const commonModules = {
           number: 1,
           title: "Introduction à l'IA",
           pdfPath: getPdfUrl("common/S3", "FSI301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Agents intelligents", "Représentation des connaissances"]
         },
         {
           id: "fsi301-e2",
           number: 2,
           title: "Algorithmes de recherche",
           pdfPath: getPdfUrl("common/S3", "FSI301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Recherche heuristique", "Algorithmes génétiques"]
         }
       ]
     },
@@ -612,18 +498,12 @@ export const commonModules = {
           number: 1,
           title: "Administration système Linux",
           pdfPath: getPdfUrl("common/S3", "ADMIN-SYS301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Shell", "Permissions", "Services"]
         },
         {
           id: "admin-sys301-e2",
           number: 2,
           title: "Virtualisation",
           pdfPath: getPdfUrl("common/S3", "ADMIN-SYS301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["VM", "Conteneurs", "Hyperviseurs"]
         }
       ]
     },
@@ -643,18 +523,12 @@ export const commonModules = {
           number: 1,
           title: "Statistiques descriptives",
           pdfPath: getPdfUrl("common/S3", "FSD301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Mesures", "Distribution", "Visualisation"]
         },
         {
           id: "fsd301-e2",
           number: 2,
           title: "Analyse exploratoire des données",
           pdfPath: getPdfUrl("common/S3", "FSD301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["EDA", "Nettoyage", "Transformation"]
         }
       ]
     },
@@ -674,18 +548,12 @@ export const commonModules = {
           number: 1,
           title: "Algèbre linéaire",
           pdfPath: getPdfUrl("common/S3", "MATH-SD301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Vecteurs", "Matrices", "Espaces vectoriels"]
         },
         {
           id: "math-sd301-e2",
           number: 2,
           title: "Calcul différentiel",
           pdfPath: getPdfUrl("common/S3", "MATH-SD301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Dérivées", "Optimisation", "Gradient"]
         }
       ]
     },
@@ -705,18 +573,12 @@ export const commonModules = {
           number: 1,
           title: "Gestion de projet",
           pdfPath: getPdfUrl("common/S3", "PM-ENTRE301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Méthodes", "Planning", "Ressources"]
         },
         {
           id: "pm-entre301-e2",
           number: 2,
           title: "Entrepreneuriat",
           pdfPath: getPdfUrl("common/S3", "PM-ENTRE301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Création d'entreprise", "Business plan", "Financement"]
         }
       ]
     },
@@ -736,18 +598,12 @@ export const commonModules = {
           number: 1,
           title: "Communication professionnelle",
           pdfPath: getPdfUrl("common/S3", "ANG-TEC301-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Présentations", "Rédaction", "Négociation"]
         },
         {
           id: "ang-tec301-e2",
           number: 2,
           title: "Terminologie technique",
           pdfPath: getPdfUrl("common/S3", "ANG-TEC301-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Vocabulaire", "Traduction", "Documentation"]
         }
       ]
     }
@@ -769,18 +625,12 @@ export const commonModules = {
           number: 1,
           title: "Design patterns",
           pdfPath: getPdfUrl("common/S4", "DEV-ADV401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["GoF", "Architecturaux", "Créationnels"]
         },
         {
           id: "dev-adv401-e2",
           number: 2,
           title: "Tests et qualité logicielle",
           pdfPath: getPdfUrl("common/S4", "DEV-ADV401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["TDD", "JUnit", "Couverture"]
         }
       ]
     },
@@ -800,18 +650,12 @@ export const commonModules = {
           number: 1,
           title: "Architecture JEE",
           pdfPath: getPdfUrl("common/S4", "JEE401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Servlets", "JSP", "EJB"]
         },
         {
           id: "jee401-e2",
           number: 2,
           title: "Services web",
           pdfPath: getPdfUrl("common/S4", "JEE401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["SOAP", "REST", "WS-Security"]
         }
       ]
     },
@@ -831,18 +675,12 @@ export const commonModules = {
           number: 1,
           title: "Méthodes de développement",
           pdfPath: getPdfUrl("common/S4", "GL401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Agile", "Scrum", "DevOps"]
         },
         {
           id: "gl401-e2",
           number: 2,
           title: "Modélisation UML",
           pdfPath: getPdfUrl("common/S4", "GL401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Diagrammes", "Cas d'utilisation", "Classes"]
         }
       ]
     },
@@ -862,18 +700,12 @@ export const commonModules = {
           number: 1,
           title: "Technologies web modernes",
           pdfPath: getPdfUrl("common/S4", "DEV-WM401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["React", "Vue.js", "Angular"]
         },
         {
           id: "dev-wm401-e2",
           number: 2,
           title: "Développement mobile",
           pdfPath: getPdfUrl("common/S4", "DEV-WM401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Android", "iOS", "Flutter"]
         }
       ]
     },
@@ -893,18 +725,12 @@ export const commonModules = {
           number: 1,
           title: "Représentation des connaissances",
           pdfPath: getPdfUrl("common/S4", "IC401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Logique", "Réseaux sémantiques", "Ontologies"]
         },
         {
           id: "ic401-e2",
           number: 2,
           title: "Systèmes experts",
           pdfPath: getPdfUrl("common/S4", "IC401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Règles", "Inférence", "Moteurs"]
         }
       ]
     },
@@ -924,18 +750,12 @@ export const commonModules = {
           number: 1,
           title: "Sécurité des systèmes d'information",
           pdfPath: getPdfUrl("common/S4", "CN401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Cryptographie", "Authentification", "PKI"]
         },
         {
           id: "cn401-e2",
           number: 2,
           title: "Vie privée et protection des données",
           pdfPath: getPdfUrl("common/S4", "CN401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["RGPD", "Anonymisation", "Consentement"]
         }
       ]
     },
@@ -955,18 +775,12 @@ export const commonModules = {
           number: 1,
           title: "Gouvernance des SI",
           pdfPath: getPdfUrl("common/S4", "GMSI401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["COBIT", "ITIL", "TOGAF"]
         },
         {
           id: "gmsi401-e2",
           number: 2,
           title: "Stratégie informatique",
           pdfPath: getPdfUrl("common/S4", "GMSI401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Alignement", "ROI", "Innovation"]
         }
       ]
     },
@@ -986,18 +800,12 @@ export const commonModules = {
           number: 1,
           title: "Méthodes de recherche",
           pdfPath: getPdfUrl("common/S4", "MR401-E1.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Scientifique", "Expérimentale", "Observationnelle"]
         },
         {
           id: "mr401-e2",
           number: 2,
           title: "Rédaction scientifique",
           pdfPath: getPdfUrl("common/S4", "MR401-E2.pdf"),
-          pages: 0,
-          fileSize: "",
-          topics: ["Articles", "Mémoires", "Présentations"]
         }
       ]
     }
@@ -1025,18 +833,12 @@ export const filiereModules = {
             number: 1,
             title: "Élément 1",
             pdfPath: getPdfUrl("isitd/semestre_cinq/technologies_de_données_massives/elt1", "hadoop_intro.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Hadoop", "Introduction", "Architecture"]
           },
           {
             id: "tdm501-isitd-e2",
             number: 2,
             title: "Élément 2",
             pdfPath: getPdfUrl("isitd/semestre_cinq/technologies_de_données_massives/elt2", "hadoop_ch2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["MapReduce", "HDFS", "YARN"]
           }
         ]
       },
@@ -1057,18 +859,12 @@ export const filiereModules = {
             number: 1,
             title: "Fondements de la Business Intelligence",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "BI501-ISITD-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Data Warehousing", "OLAP", "Reporting"]
           },
           {
             id: "bi501-isitd-e2",
             number: 2,
             title: "Outils de Business Intelligence",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "BI501-ISITD-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Tableau", "Power BI", "QlikView"]
           }
         ]
       },
@@ -1089,18 +885,12 @@ export const filiereModules = {
             number: 1,
             title: "Architecture des systèmes embarqués",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "SE501-ISITD-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Microcontrôleurs", "Architectures ARM", "Interfaces"]
           },
           {
             id: "se501-isitd-e2",
             number: 2,
             title: "Programmation temps réel",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "SE501-ISITD-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RTOS", "Synchronisation", "Contraintes temporelles"]
           }
         ]
       },
@@ -1121,18 +911,12 @@ export const filiereModules = {
             number: 1,
             title: "Stratégies de transformation digitale",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "TDTI501-ISITD-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Stratégie digitale", "Changement organisationnel", "Innovation"]
           },
           {
             id: "tdti501-isitd-e2",
             number: 2,
             title: "Technologies émergentes",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "TDTI501-ISITD-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["IoT", "Cloud Computing", "Blockchain"]
           }
         ]
       },
@@ -1153,18 +937,12 @@ export const filiereModules = {
             number: 1,
             title: "Architecture orientée services",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "UISI501-ISITD-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["SOA", "Microservices", "API Management"]
           },
           {
             id: "uisi501-isitd-e2",
             number: 2,
             title: "Intégration des systèmes",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "UISI501-ISITD-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["ESB", "Middleware", "ETL"]
           }
         ]
       },
@@ -1185,18 +963,12 @@ export const filiereModules = {
             number: 1,
             title: "Concepts des systèmes ubiquitaires",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "SU501-ISITD-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Ubiquité", "Contexte", "Mobilité"]
           },
           {
             id: "su501-isitd-e2",
             number: 2,
             title: "Applications ubiquitaires",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "SU501-ISITD-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["IoT", "Smart Cities", "Wearables"]
           }
         ]
       },
@@ -1217,18 +989,12 @@ export const filiereModules = {
             number: 1,
             title: "Normes et modèles qualité",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "QASI501-ISITD-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["ISO 9001", "CMMI", "ITIL"]
           },
           {
             id: "qasi501-isitd-e2",
             number: 2,
             title: "Audit des SI",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "QASI501-ISITD-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Contrôles", "Risques", "Conformité"]
           }
         ]
       },
@@ -1249,18 +1015,12 @@ export const filiereModules = {
             number: 1,
             title: "Compétences relationnelles",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "DP501-ISITD-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Communication", "Leadership", "Travail d'équipe"]
           },
           {
             id: "dp501-isitd-e2",
             number: 2,
             title: "Gestion du stress et motivation",
             pdfPath: getPdfUrl("filieres/ISITD/S5", "DP501-ISITD-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Stress", "Motivation", "Équilibre vie pro"]
           }
         ]
       }
@@ -1282,18 +1042,12 @@ export const filiereModules = {
             number: 1,
             title: "Principes de l'orienté objet",
             pdfPath: getPdfUrl("common/S3", "CPO301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Classes", "Objets", "Encapsulation"]
           },
           {
             id: "cpo301-e2",
             number: 2,
             title: "Héritage et polymorphisme",
             pdfPath: getPdfUrl("common/S3", "CPO301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Héritage", "Polymorphisme", "Abstraction"]
           }
         ]
       },
@@ -1313,18 +1067,12 @@ export const filiereModules = {
             number: 1,
             title: "Bases de données avancées",
             pdfPath: getPdfUrl("common/S3", "BDA-ADMIN301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["SQL avancé", "Optimisation", "Transactions"]
           },
           {
             id: "bda-admin301-e2",
             number: 2,
             title: "Administration des bases de données",
             pdfPath: getPdfUrl("common/S3", "BDA-ADMIN301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["SGBD", "Sauvegarde", "Sécurité"]
           }
         ]
       },
@@ -1344,18 +1092,12 @@ export const filiereModules = {
             number: 1,
             title: "Introduction à l'IA",
             pdfPath: getPdfUrl("common/S3", "FSI301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Agents intelligents", "Représentation des connaissances"]
           },
           {
             id: "fsi301-e2",
             number: 2,
             title: "Algorithmes de recherche",
             pdfPath: getPdfUrl("common/S3", "FSI301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Recherche heuristique", "Algorithmes génétiques"]
           }
         ]
       },
@@ -1375,18 +1117,12 @@ export const filiereModules = {
             number: 1,
             title: "Administration système Linux",
             pdfPath: getPdfUrl("common/S3", "ADMIN-SYS301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Shell", "Permissions", "Services"]
           },
           {
             id: "admin-sys301-e2",
             number: 2,
             title: "Virtualisation",
             pdfPath: getPdfUrl("common/S3", "ADMIN-SYS301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["VM", "Conteneurs", "Hyperviseurs"]
           }
         ]
       },
@@ -1406,18 +1142,12 @@ export const filiereModules = {
             number: 1,
             title: "Statistiques descriptives",
             pdfPath: getPdfUrl("common/S3", "FSD301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Mesures", "Distribution", "Visualisation"]
           },
           {
             id: "fsd301-e2",
             number: 2,
             title: "Analyse exploratoire des données",
             pdfPath: getPdfUrl("common/S3", "FSD301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["EDA", "Nettoyage", "Transformation"]
           }
         ]
       },
@@ -1437,18 +1167,12 @@ export const filiereModules = {
             number: 1,
             title: "Algèbre linéaire",
             pdfPath: getPdfUrl("common/S3", "MATH-SD301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Vecteurs", "Matrices", "Espaces vectoriels"]
           },
           {
             id: "math-sd301-e2",
             number: 2,
             title: "Calcul différentiel",
             pdfPath: getPdfUrl("common/S3", "MATH-SD301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Dérivées", "Optimisation", "Gradient"]
           }
         ]
       },
@@ -1468,18 +1192,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion de projet",
             pdfPath: getPdfUrl("common/S3", "PM-ENTRE301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Méthodes", "Planning", "Ressources"]
           },
           {
             id: "pm-entre301-e2",
             number: 2,
             title: "Entrepreneuriat",
             pdfPath: getPdfUrl("common/S3", "PM-ENTRE301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Création d'entreprise", "Business plan", "Financement"]
           }
         ]
       },
@@ -1499,18 +1217,12 @@ export const filiereModules = {
             number: 1,
             title: "Communication professionnelle",
             pdfPath: getPdfUrl("common/S3", "ANG-TEC301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Présentations", "Rédaction", "Négociation"]
           },
           {
             id: "ang-tec301-e2",
             number: 2,
             title: "Terminologie technique",
             pdfPath: getPdfUrl("common/S3", "ANG-TEC301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Vocabulaire", "Traduction", "Documentation"]
           }
         ]
       }
@@ -1532,18 +1244,12 @@ export const filiereModules = {
             number: 1,
             title: "Design patterns",
             pdfPath: getPdfUrl("common/S4", "DEV-ADV401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["GoF", "Architecturaux", "Créationnels"]
           },
           {
             id: "dev-adv401-e2",
             number: 2,
             title: "Tests et qualité logicielle",
             pdfPath: getPdfUrl("common/S4", "DEV-ADV401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["TDD", "JUnit", "Couverture"]
           }
         ]
       },
@@ -1563,18 +1269,12 @@ export const filiereModules = {
             number: 1,
             title: "Architecture JEE",
             pdfPath: getPdfUrl("common/S4", "JEE401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Servlets", "JSP", "EJB"]
           },
           {
             id: "jee401-e2",
             number: 2,
             title: "Services web",
             pdfPath: getPdfUrl("common/S4", "JEE401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["SOAP", "REST", "WS-Security"]
           }
         ]
       },
@@ -1594,18 +1294,12 @@ export const filiereModules = {
             number: 1,
             title: "Méthodes de développement",
             pdfPath: getPdfUrl("common/S4", "GL401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Agile", "Scrum", "DevOps"]
           },
           {
             id: "gl401-e2",
             number: 2,
             title: "Modélisation UML",
             pdfPath: getPdfUrl("common/S4", "GL401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Diagrammes", "Cas d'utilisation", "Classes"]
           }
         ]
       },
@@ -1625,18 +1319,12 @@ export const filiereModules = {
             number: 1,
             title: "Technologies web modernes",
             pdfPath: getPdfUrl("common/S4", "DEV-WM401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["React", "Vue.js", "Angular"]
           },
           {
             id: "dev-wm401-e2",
             number: 2,
             title: "Développement mobile",
             pdfPath: getPdfUrl("common/S4", "DEV-WM401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Android", "iOS", "Flutter"]
           }
         ]
       },
@@ -1656,18 +1344,12 @@ export const filiereModules = {
             number: 1,
             title: "Représentation des connaissances",
             pdfPath: getPdfUrl("common/S4", "IC401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Logique", "Réseaux sémantiques", "Ontologies"]
           },
           {
             id: "ic401-e2",
             number: 2,
             title: "Systèmes experts",
             pdfPath: getPdfUrl("common/S4", "IC401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Règles", "Inférence", "Moteurs"]
           }
         ]
       },
@@ -1687,18 +1369,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité des systèmes d'information",
             pdfPath: getPdfUrl("common/S4", "CN401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Cryptographie", "Authentification", "PKI"]
           },
           {
             id: "cn401-e2",
             number: 2,
             title: "Vie privée et protection des données",
             pdfPath: getPdfUrl("common/S4", "CN401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RGPD", "Anonymisation", "Consentement"]
           }
         ]
       },
@@ -1718,18 +1394,12 @@ export const filiereModules = {
             number: 1,
             title: "Gouvernance des SI",
             pdfPath: getPdfUrl("common/S4", "GMSI401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["COBIT", "ITIL", "TOGAF"]
           },
           {
             id: "gmsi401-e2",
             number: 2,
             title: "Stratégie informatique",
             pdfPath: getPdfUrl("common/S4", "GMSI401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Alignement", "ROI", "Innovation"]
           }
         ]
       },
@@ -1749,18 +1419,12 @@ export const filiereModules = {
             number: 1,
             title: "Méthodes de recherche",
             pdfPath: getPdfUrl("common/S4", "MR401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Scientifique", "Expérimentale", "Observationnelle"]
           },
           {
             id: "mr401-e2",
             number: 2,
             title: "Rédaction scientifique",
             pdfPath: getPdfUrl("common/S4", "MR401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Articles", "Mémoires", "Présentations"]
           }
         ]
       }
@@ -1785,18 +1449,12 @@ export const filiereModules = {
             number: 1,
             title: "Fondements de la Business Intelligence",
             pdfPath: getPdfUrl("filieres/ICS/S5", "BI501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Data Warehousing", "OLAP", "Reporting"]
           },
           {
             id: "bi501-icsds-e2",
             number: 2,
             title: "Outils de Business Intelligence",
             pdfPath: getPdfUrl("filieres/ICS/S5", "BI501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Tableau", "Power BI", "QlikView"]
           }
         ]
       },
@@ -1817,18 +1475,12 @@ export const filiereModules = {
             number: 1,
             title: "Architecture des plateformes Big Data",
             pdfPath: getPdfUrl("filieres/ICS/S5", "DA501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Hadoop", "Spark", "Kafka"]
           },
           {
             id: "da501-icsds-e2",
             number: 2,
             title: "Modélisation des données",
             pdfPath: getPdfUrl("filieres/ICS/S5", "DA501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Dimensionnelle", "Data Vault", "Data Lake"]
           }
         ]
       },
@@ -1849,18 +1501,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion de projet data science",
             pdfPath: getPdfUrl("filieres/ICS/S5", "ACP501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["CRISP-DM", "Kanban", "Agilité"]
           },
           {
             id: "acp501-icsds-e2",
             number: 2,
             title: "Gouvernance des projets",
             pdfPath: getPdfUrl("filieres/ICS/S5", "ACP501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RACI", "Budget", "Risques"]
           }
         ]
       },
@@ -1881,18 +1527,12 @@ export const filiereModules = {
             number: 1,
             title: "Traitement d'images",
             pdfPath: getPdfUrl("filieres/ICS/S5", "CVP501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Filtres", "Segmentation", "Descripteurs"]
           },
           {
             id: "cvpr501-icsds-e2",
             number: 2,
             title: "Réseaux de neurones convolutifs",
             pdfPath: getPdfUrl("filieres/ICS/S5", "CVP501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["CNN", "Transfer Learning", "Object Detection"]
           }
         ]
       },
@@ -1913,18 +1553,12 @@ export const filiereModules = {
             number: 1,
             title: "Traitement du langage naturel",
             pdfPath: getPdfUrl("filieres/ICS/S5", "TGA501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Tokenisation", "POS", "NER"]
           },
           {
             id: "tga501-icsds-e2",
             number: 2,
             title: "Analyse de graphes",
             pdfPath: getPdfUrl("filieres/ICS/S5", "TGA501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Graphes", "Centrality", "Communautés"]
           }
         ]
       },
@@ -1945,18 +1579,12 @@ export const filiereModules = {
             number: 1,
             title: "Concepts des systèmes ubiquitaires",
             pdfPath: getPdfUrl("filieres/ICS/S5", "SU501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Ubiquité", "Contexte", "Mobilité"]
           },
           {
             id: "su501-icsds-e2",
             number: 2,
             title: "Applications ubiquitaires",
             pdfPath: getPdfUrl("filieres/ICS/S5", "SU501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["IoT", "Smart Cities", "Wearables"]
           }
         ]
       },
@@ -1977,18 +1605,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion des risques en DS",
             pdfPath: getPdfUrl("filieres/ICS/S5", "GRI501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Risques", "Mitigation", "Assurance"]
           },
           {
             id: "gri501-icsds-e2",
             number: 2,
             title: "Innovation et entrepreneuriat",
             pdfPath: getPdfUrl("filieres/ICS/S5", "GRI501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Innovation", "Startups", "Financement"]
           }
         ]
       },
@@ -2009,18 +1631,12 @@ export const filiereModules = {
             number: 1,
             title: "Méthodes de recherche en IA",
             pdfPath: getPdfUrl("filieres/ICS/S5", "MR501-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Expérimentation", "Validation", "Publication"]
           },
           {
             id: "mr501-icsds-e2",
             number: 2,
             title: "Éthique en IA et DS",
             pdfPath: getPdfUrl("filieres/ICS/S5", "MR501-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Éthique", "Biais", "Transparence"]
           }
         ]
       }
@@ -2042,18 +1658,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion de projet",
             pdfPath: getPdfUrl("common/S3", "ACP301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Méthodes", "Planning", "Ressources"]
           },
           {
             id: "acp301-e2",
             number: 2,
             title: "Conduite de projet",
             pdfPath: getPdfUrl("common/S3", "ACP301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Leadership", "Communication", "Suivi"]
           }
         ]
       },
@@ -2073,18 +1683,12 @@ export const filiereModules = {
             number: 1,
             title: "Principes de l'orienté objet",
             pdfPath: getPdfUrl("common/S3", "POO301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Classes", "Objets", "Encapsulation"]
           },
           {
             id: "poo301-e2",
             number: 2,
             title: "Héritage et polymorphisme",
             pdfPath: getPdfUrl("common/S3", "POO301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Héritage", "Polymorphisme", "Abstraction"]
           }
         ]
       },
@@ -2104,18 +1708,12 @@ export const filiereModules = {
             number: 1,
             title: "Statistiques inférentielles",
             pdfPath: getPdfUrl("common/S3", "SI301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Tests", "Intervalles", "Régression"]
           },
           {
             id: "si301-e2",
             number: 2,
             title: "Processus stochastiques",
             pdfPath: getPdfUrl("common/S3", "SI301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Markov", "Poisson", "Brownien"]
           }
         ]
       },
@@ -2135,18 +1733,12 @@ export const filiereModules = {
             number: 1,
             title: "Théorie de l'information",
             pdfPath: getPdfUrl("common/S3", "TI301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Entropy", "Compression", "Codage"]
           },
           {
             id: "ti301-e2",
             number: 2,
             title: "Traitement du signal",
             pdfPath: getPdfUrl("common/S3", "TI301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["FFT", "Filtrage", "Échantillonnage"]
           }
         ]
       },
@@ -2166,18 +1758,12 @@ export const filiereModules = {
             number: 1,
             title: "Introduction à l'IA",
             pdfPath: getPdfUrl("common/S3", "FSI301-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Agents intelligents", "Représentation des connaissances"]
           },
           {
             id: "fsi301-icsds-e2",
             number: 2,
             title: "Algorithmes de recherche",
             pdfPath: getPdfUrl("common/S3", "FSI301-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Recherche heuristique", "Algorithmes génétiques"]
           }
         ]
       },
@@ -2197,18 +1783,12 @@ export const filiereModules = {
             number: 1,
             title: "Optimisation combinatoire",
             pdfPath: getPdfUrl("common/S3", "ROA301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Graphes", "Algorithmes", "Complexité"]
           },
           {
             id: "roa301-e2",
             number: 2,
             title: "Programmation linéaire avancée",
             pdfPath: getPdfUrl("common/S3", "ROA301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Simplexe", "Dualité", "Post-optimisation"]
           }
         ]
       },
@@ -2228,18 +1808,12 @@ export const filiereModules = {
             number: 1,
             title: "Acquisition des données",
             pdfPath: getPdfUrl("common/S3", "DAA301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Sources", "API", "Web scraping"]
           },
           {
             id: "daa301-e2",
             number: 2,
             title: "Analyse exploratoire",
             pdfPath: getPdfUrl("common/S3", "DAA301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["EDA", "Visualisation", "Statistiques"]
           }
         ]
       },
@@ -2259,18 +1833,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion de projet",
             pdfPath: getPdfUrl("common/S3", "PM-ENT301-ICS-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Méthodes", "Planning", "Ressources"]
           },
           {
             id: "pm-entre301-icsds-e2",
             number: 2,
             title: "Entrepreneuriat",
             pdfPath: getPdfUrl("common/S3", "PM-ENT301-ICS-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Création d'entreprise", "Business plan", "Financement"]
           }
         ]
       }
@@ -2292,18 +1860,12 @@ export const filiereModules = {
             number: 1,
             title: "Programmation fonctionnelle",
             pdfPath: getPdfUrl("common/S4", "PAM401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Lambda", "Immutabilité", "Monades"]
           },
           {
             id: "pam401-e2",
             number: 2,
             title: "Développement mobile",
             pdfPath: getPdfUrl("common/S4", "PAM401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Android", "iOS", "Flutter"]
           }
         ]
       },
@@ -2323,18 +1885,12 @@ export const filiereModules = {
             number: 1,
             title: "Bases NoSQL",
             pdfPath: getPdfUrl("common/S4", "BDA401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["MongoDB", "Cassandra", "Redis"]
           },
           {
             id: "bda401-e2",
             number: 2,
             title: "Data warehousing",
             pdfPath: getPdfUrl("common/S4", "BDA401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["ETL", "Dimensions", "Faits"]
           }
         ]
       },
@@ -2354,18 +1910,12 @@ export const filiereModules = {
             number: 1,
             title: "Modèles de régression",
             pdfPath: getPdfUrl("common/S4", "MRSC401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Linéaire", "Logistique", "Polynomiale"]
           },
           {
             id: "mrsc401-e2",
             number: 2,
             title: "Séries chronologiques",
             pdfPath: getPdfUrl("common/S4", "MRSC401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["ARIMA", "Tendance", "Saisonnalité"]
           }
         ]
       },
@@ -2385,18 +1935,12 @@ export const filiereModules = {
             number: 1,
             title: "Apprentissage supervisé",
             pdfPath: getPdfUrl("common/S4", "ML401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Classification", "Régression", "SVM"]
           },
           {
             id: "ml401-e2",
             number: 2,
             title: "Apprentissage non supervisé",
             pdfPath: getPdfUrl("common/S4", "ML401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Clustering", "PCA", "Association"]
           }
         ]
       },
@@ -2416,18 +1960,12 @@ export const filiereModules = {
             number: 1,
             title: "Systèmes répartis",
             pdfPath: getPdfUrl("common/S4", "SRV401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RPC", "Middleware", "Consistance"]
           },
           {
             id: "srv401-e2",
             number: 2,
             title: "Virtualisation",
             pdfPath: getPdfUrl("common/S4", "SRV401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["VM", "Conteneurs", "Orchestration"]
           }
         ]
       },
@@ -2447,18 +1985,12 @@ export const filiereModules = {
             number: 1,
             title: "Blockchain fondamentaux",
             pdfPath: getPdfUrl("common/S4", "CT401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Hachage", "Preuve de travail", "Consensus"]
           },
           {
             id: "ct401-e2",
             number: 2,
             title: "Smart contracts",
             pdfPath: getPdfUrl("common/S4", "CT401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Ethereum", "Solidity", "DApps"]
           }
         ]
       },
@@ -2478,18 +2010,12 @@ export const filiereModules = {
             number: 1,
             title: "Stratégie d'entreprise",
             pdfPath: getPdfUrl("common/S4", "MS401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Analyse SWOT", "Positionnement", "Avantage concurrentiel"]
           },
           {
             id: "ms401-e2",
             number: 2,
             title: "Innovation stratégique",
             pdfPath: getPdfUrl("common/S4", "MS401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Innovation", "R&D", "Transformation"]
           }
         ]
       },
@@ -2509,18 +2035,12 @@ export const filiereModules = {
             number: 1,
             title: "Communication professionnelle",
             pdfPath: getPdfUrl("common/S4", "ATEC401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Présentations", "Rédaction", "Négociation"]
           },
           {
             id: "atec401-e2",
             number: 2,
             title: "Terminologie technique",
             pdfPath: getPdfUrl("common/S4", "ATEC401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Vocabulaire", "Traduction", "Documentation"]
           }
         ]
       }
@@ -2545,18 +2065,12 @@ export const filiereModules = {
             number: 1,
             title: "Introduction au Big Data",
             pdfPath: getPdfUrl("filieres/IIN/S5", "TDM501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Hadoop", "MapReduce", "HDFS"]
           },
           {
             id: "tdm501-iind-e2",
             number: 2,
             title: "Traitement distribué avec Spark",
             pdfPath: getPdfUrl("filieres/IIN/S5", "TDM501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Spark Core", "RDD", "DataFrames"]
           }
         ]
       },
@@ -2577,18 +2091,12 @@ export const filiereModules = {
             number: 1,
             title: "Fondements de la Business Intelligence",
             pdfPath: getPdfUrl("filieres/IIN/S5", "BI501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Data Warehousing", "OLAP", "Reporting"]
           },
           {
             id: "bi501-iind-e2",
             number: 2,
             title: "Outils de Business Intelligence",
             pdfPath: getPdfUrl("filieres/IIN/S5", "BI501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Tableau", "Power BI", "QlikView"]
           }
         ]
       },
@@ -2609,18 +2117,12 @@ export const filiereModules = {
             number: 1,
             title: "Fondements de l'intelligence compétitive",
             pdfPath: getPdfUrl("filieres/IIN/S5", "IC501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Veille", "Analyse concurrentielle", "Stratégie"]
           },
           {
             id: "ic501-iind-e2",
             number: 2,
             title: "Outils et méthodes",
             pdfPath: getPdfUrl("filieres/IIN/S5", "IC501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Collecte", "Analyse", "Diffusion"]
           }
         ]
       },
@@ -2641,18 +2143,12 @@ export const filiereModules = {
             number: 1,
             title: "Méthodes d'analyse de données",
             pdfPath: getPdfUrl("filieres/IIN/S5", "AEC501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Statistiques", "Visualisation", "Corrélation"]
           },
           {
             id: "aec501-iind-e2",
             number: 2,
             title: "Extraction de connaissances",
             pdfPath: getPdfUrl("filieres/IIN/S5", "AEC501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Pattern mining", "Association", "Séquences"]
           }
         ]
       },
@@ -2673,18 +2169,12 @@ export const filiereModules = {
             number: 1,
             title: "Politiques de gouvernance",
             pdfPath: getPdfUrl("filieres/IIN/S5", "DIG501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Politiques", "Cadres", "Normes"]
           },
           {
             id: "dig501-iind-e2",
             number: 2,
             title: "Qualité et maîtrise des données",
             pdfPath: getPdfUrl("filieres/IIN/S5", "DIG501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Qualité", "Maîtrise", "Conformité"]
           }
         ]
       },
@@ -2705,18 +2195,12 @@ export const filiereModules = {
             number: 1,
             title: "Concepts des systèmes ubiquitaires",
             pdfPath: getPdfUrl("filieres/IIN/S5", "SU501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Ubiquité", "Contexte", "Mobilité"]
           },
           {
             id: "su501-iind-e2",
             number: 2,
             title: "Applications ubiquitaires",
             pdfPath: getPdfUrl("filieres/IIN/S5", "SU501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["IoT", "Smart Cities", "Wearables"]
           }
         ]
       },
@@ -2737,18 +2221,12 @@ export const filiereModules = {
             number: 1,
             title: "Normes et modèles qualité",
             pdfPath: getPdfUrl("filieres/IIN/S5", "QASI501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["ISO 9001", "CMMI", "ITIL"]
           },
           {
             id: "qasi501-iind-e2",
             number: 2,
             title: "Audit des SI",
             pdfPath: getPdfUrl("filieres/IIN/S5", "QASI501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Contrôles", "Risques", "Conformité"]
           }
         ]
       },
@@ -2769,18 +2247,12 @@ export const filiereModules = {
             number: 1,
             title: "Compétences relationnelles",
             pdfPath: getPdfUrl("filieres/IIN/S5", "DP501-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Communication", "Leadership", "Travail d'équipe"]
           },
           {
             id: "dp501-iind-e2",
             number: 2,
             title: "Gestion du stress et motivation",
             pdfPath: getPdfUrl("filieres/IIN/S5", "DP501-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Stress", "Motivation", "Équilibre vie pro"]
           }
         ]
       }
@@ -2802,18 +2274,12 @@ export const filiereModules = {
             number: 1,
             title: "Principes de l'orienté objet",
             pdfPath: getPdfUrl("common/S3", "CPO301-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Classes", "Objets", "Encapsulation"]
           },
           {
             id: "cpo301-iind-e2",
             number: 2,
             title: "Héritage et polymorphisme",
             pdfPath: getPdfUrl("common/S3", "CPO301-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Héritage", "Polymorphisme", "Abstraction"]
           }
         ]
       },
@@ -2833,18 +2299,12 @@ export const filiereModules = {
             number: 1,
             title: "Bases de données avancées",
             pdfPath: getPdfUrl("common/S3", "BDA-ADM301-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["SQL avancé", "Optimisation", "Transactions"]
           },
           {
             id: "bda-admin301-iind-e2",
             number: 2,
             title: "Administration des bases de données",
             pdfPath: getPdfUrl("common/S3", "BDA-ADM301-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["SGBD", "Sauvegarde", "Sécurité"]
           }
         ]
       },
@@ -2864,18 +2324,12 @@ export const filiereModules = {
             number: 1,
             title: "Introduction à l'IA",
             pdfPath: getPdfUrl("common/S3", "FSI301-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Agents intelligents", "Représentation des connaissances"]
           },
           {
             id: "fsi301-iind-e2",
             number: 2,
             title: "Algorithmes de recherche",
             pdfPath: getPdfUrl("common/S3", "FSI301-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Recherche heuristique", "Algorithmes génétiques"]
           }
         ]
       },
@@ -2895,18 +2349,12 @@ export const filiereModules = {
             number: 1,
             title: "Administration système Linux",
             pdfPath: getPdfUrl("common/S3", "ADS301-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Shell", "Permissions", "Services"]
           },
           {
             id: "admin-sys301-iind-e2",
             number: 2,
             title: "Virtualisation",
             pdfPath: getPdfUrl("common/S3", "ADS301-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["VM", "Conteneurs", "Hyperviseurs"]
           }
         ]
       },
@@ -2926,18 +2374,12 @@ export const filiereModules = {
             number: 1,
             title: "Indexation et recherche",
             pdfPath: getPdfUrl("filieres/IIN/S3", "TRI301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Indexation", "Requêtes", "Pertinence"]
           },
           {
             id: "tri301-e2",
             number: 2,
             title: "Algorithmes de recherche",
             pdfPath: getPdfUrl("filieres/IIN/S3", "TRI301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["PageRank", "TF-IDF", "Similarité"]
           }
         ]
       },
@@ -2957,18 +2399,12 @@ export const filiereModules = {
             number: 1,
             title: "Algèbre linéaire",
             pdfPath: getPdfUrl("common/S3", "MSD301-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Vecteurs", "Matrices", "Espaces vectoriels"]
           },
           {
             id: "math-sd301-iind-e2",
             number: 2,
             title: "Calcul différentiel",
             pdfPath: getPdfUrl("common/S3", "MSD301-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Dérivées", "Optimisation", "Gradient"]
           }
         ]
       },
@@ -2988,18 +2424,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion de projet",
             pdfPath: getPdfUrl("common/S3", "PME301-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Méthodes", "Planning", "Ressources"]
           },
           {
             id: "pm-entre301-iind-e2",
             number: 2,
             title: "Entrepreneuriat",
             pdfPath: getPdfUrl("common/S3", "PME301-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Création d'entreprise", "Business plan", "Financement"]
           }
         ]
       },
@@ -3019,18 +2449,12 @@ export const filiereModules = {
             number: 1,
             title: "Communication professionnelle",
             pdfPath: getPdfUrl("common/S3", "AT301-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Présentations", "Rédaction", "Négociation"]
           },
           {
             id: "ang-tec301-iind-e2",
             number: 2,
             title: "Terminologie technique",
             pdfPath: getPdfUrl("common/S3", "AT301-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Vocabulaire", "Traduction", "Documentation"]
           }
         ]
       }
@@ -3052,18 +2476,12 @@ export const filiereModules = {
             number: 1,
             title: "Ontologies et langages",
             pdfPath: getPdfUrl("filieres/IIN/S4", "OWSM401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["OWL", "RDF", "SPARQL"]
           },
           {
             id: "owsm401-e2",
             number: 2,
             title: "Web sémantique",
             pdfPath: getPdfUrl("filieres/IIN/S4", "OWSM401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Linked Data", "Triple stores", "Applications"]
           }
         ]
       },
@@ -3083,18 +2501,12 @@ export const filiereModules = {
             number: 1,
             title: "Organisation de l'information",
             pdfPath: getPdfUrl("filieres/IIN/S4", "ID401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Classification", "Taxonomies", "Métadonnées"]
           },
           {
             id: "id401-e2",
             number: 2,
             title: "Recherche documentaire",
             pdfPath: getPdfUrl("filieres/IIN/S4", "ID401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Recherche", "Indexation", "Evaluation"]
           }
         ]
       },
@@ -3114,18 +2526,12 @@ export const filiereModules = {
             number: 1,
             title: "Traitement automatique",
             pdfPath: getPdfUrl("filieres/IIN/S4", "TAID401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["OCR", "NLP", "Classification"]
           },
           {
             id: "taid401-e2",
             number: 2,
             title: "Indexation automatique",
             pdfPath: getPdfUrl("filieres/IIN/S4", "TAID401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Indexation", "Résumé", "Extraction"]
           }
         ]
       },
@@ -3145,18 +2551,12 @@ export const filiereModules = {
             number: 1,
             title: "Conception multimédia",
             pdfPath: getPdfUrl("filieres/IIN/S4", "CGCM401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Design", "Interactivité", "Narration"]
           },
           {
             id: "cgcm401-e2",
             number: 2,
             title: "Gestion des contenus",
             pdfPath: getPdfUrl("filieres/IIN/S4", "CGCM401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Stockage", "Distribution", "Droits"]
           }
         ]
       },
@@ -3176,18 +2576,12 @@ export const filiereModules = {
             number: 1,
             title: "Représentation des connaissances",
             pdfPath: getPdfUrl("common/S4", "IC401-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Logique", "Réseaux sémantiques", "Ontologies"]
           },
           {
             id: "ic401-iind-e2",
             number: 2,
             title: "Systèmes experts",
             pdfPath: getPdfUrl("common/S4", "IC401-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Règles", "Inférence", "Moteurs"]
           }
         ]
       },
@@ -3207,18 +2601,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité des systèmes d'information",
             pdfPath: getPdfUrl("common/S4", "CN401-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Cryptographie", "Authentification", "PKI"]
           },
           {
             id: "cn401-iind-e2",
             number: 2,
             title: "Vie privée et protection des données",
             pdfPath: getPdfUrl("common/S4", "CN401-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RGPD", "Anonymisation", "Consentement"]
           }
         ]
       },
@@ -3238,18 +2626,12 @@ export const filiereModules = {
             number: 1,
             title: "Gouvernance des SI",
             pdfPath: getPdfUrl("common/S4", "GMSI401-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["COBIT", "ITIL", "TOGAF"]
           },
           {
             id: "gmsi401-iind-e2",
             number: 2,
             title: "Stratégie informatique",
             pdfPath: getPdfUrl("common/S4", "GMSI401-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Alignement", "ROI", "Innovation"]
           }
         ]
       },
@@ -3269,18 +2651,12 @@ export const filiereModules = {
             number: 1,
             title: "Méthodes de recherche",
             pdfPath: getPdfUrl("common/S4", "MR401-IIN-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Scientifique", "Expérimentale", "Observationnelle"]
           },
           {
             id: "mr401-iind-e2",
             number: 2,
             title: "Rédaction scientifique",
             pdfPath: getPdfUrl("common/S4", "MR401-IIN-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Articles", "Mémoires", "Présentations"]
           }
         ]
       }
@@ -3305,18 +2681,12 @@ export const filiereModules = {
             number: 1,
             title: "Fondements de l'ethical hacking",
             pdfPath: getPdfUrl("filieres/ISC/S5", "EH501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Méthodologie", "Reconnaissance", "Scanning"]
           },
           {
             id: "eh501-issic-e2",
             number: 2,
             title: "Attaques et contre-mesures",
             pdfPath: getPdfUrl("filieres/ISC/S5", "EH501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Exploitation", "Post-exploitation", "Pivot"]
           }
         ]
       },
@@ -3337,18 +2707,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité des systèmes embarqués",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SEI501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["IoT Security", "Firmware", "Side-channel attacks"]
           },
           {
             id: "sei501-issic-e2",
             number: 2,
             title: "Systèmes intelligents sécurisés",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SEI501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["AI Security", "ML Security", "Privacy"]
           }
         ]
       },
@@ -3369,18 +2733,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité des réseaux",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SM501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Firewall", "VPN", "IDS/IPS"]
           },
           {
             id: "sm501-issic-e2",
             number: 2,
             title: "Sécurité mobile",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SM501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Mobile threats", "App security", "BYOD"]
           }
         ]
       },
@@ -3401,18 +2759,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité des systèmes ubiquitaires",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SU501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Ubiquité", "Contexte", "Mobilité"]
           },
           {
             id: "su501-issic-e2",
             number: 2,
             title: "Applications ubiquitaires sécurisées",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SU501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["IoT", "Smart Cities", "Wearables"]
           }
         ]
       },
@@ -3433,18 +2785,12 @@ export const filiereModules = {
             number: 1,
             title: "Technologies biométriques",
             pdfPath: getPdfUrl("filieres/ISC/S5", "BSS501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Visage", "Empreinte", "Iris"]
           },
           {
             id: "bss501-issic-e2",
             number: 2,
             title: "Sécurité biométrique",
             pdfPath: getPdfUrl("filieres/ISC/S5", "BSS501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Spoofing", "Template protection", "Privacy"]
           }
         ]
       },
@@ -3465,18 +2811,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité dans les systèmes distribués",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SSD501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Consistance", "Authentification", "Autorisation"]
           },
           {
             id: "ssd501-issic-e2",
             number: 2,
             title: "Protocoles de sécurité",
             pdfPath: getPdfUrl("filieres/ISC/S5", "SSD501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["TLS", "SSH", "Kerberos"]
           }
         ]
       },
@@ -3497,18 +2837,12 @@ export const filiereModules = {
             number: 1,
             title: "Gouvernance de la sécurité",
             pdfPath: getPdfUrl("filieres/ISC/S5", "GASSI501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Normes", "Politiques", "Cadres"]
           },
           {
             id: "gassi501-issic-e2",
             number: 2,
             title: "Audit de sécurité",
             pdfPath: getPdfUrl("filieres/ISC/S5", "GASSI501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Vulnérabilités", "Compliance", "Reporting"]
           }
         ]
       },
@@ -3529,18 +2863,12 @@ export const filiereModules = {
             number: 1,
             title: "Méthodes de recherche en sécurité",
             pdfPath: getPdfUrl("filieres/ISC/S5", "MR501-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Expérimentation", "Validation", "Publication"]
           },
           {
             id: "mr501-issic-e2",
             number: 2,
             title: "Éthique en cybersécurité",
             pdfPath: getPdfUrl("filieres/ISC/S5", "MR501-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Éthique", "Responsabilité", "Légalité"]
           }
         ]
       }
@@ -3562,18 +2890,12 @@ export const filiereModules = {
             number: 1,
             title: "Analyse des systèmes",
             pdfPath: getPdfUrl("filieres/ISC/S3", "ASP301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Modélisation", "Analyse fonctionnelle", "UML"]
           },
           {
             id: "asp301-e2",
             number: 2,
             title: "Conduite de projet",
             pdfPath: getPdfUrl("filieres/ISC/S3", "ASP301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Leadership", "Communication", "Suivi"]
           }
         ]
       },
@@ -3593,18 +2915,12 @@ export const filiereModules = {
             number: 1,
             title: "Principes de l'orienté objet",
             pdfPath: getPdfUrl("common/S3", "POO301-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Classes", "Objets", "Encapsulation"]
           },
           {
             id: "poo301-issic-e2",
             number: 2,
             title: "Héritage et polymorphisme",
             pdfPath: getPdfUrl("common/S3", "POO301-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Héritage", "Polymorphisme", "Abstraction"]
           }
         ]
       },
@@ -3624,18 +2940,12 @@ export const filiereModules = {
             number: 1,
             title: "Statistiques inférentielles",
             pdfPath: getPdfUrl("common/S3", "SI301-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Tests", "Intervalles", "Régression"]
           },
           {
             id: "si301-issic-e2",
             number: 2,
             title: "Processus stochastiques",
             pdfPath: getPdfUrl("common/S3", "SI301-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Markov", "Poisson", "Brownien"]
           }
         ]
       },
@@ -3655,18 +2965,12 @@ export const filiereModules = {
             number: 1,
             title: "Concepts de base",
             pdfPath: getPdfUrl("filieres/ISC/S3", "FC301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Menaces", "Vulnérabilités", "Risques"]
           },
           {
             id: "fc301-e2",
             number: 2,
             title: "Stratégies de défense",
             pdfPath: getPdfUrl("filieres/ISC/S3", "FC301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Prévention", "Détection", "Réponse"]
           }
         ]
       },
@@ -3686,18 +2990,12 @@ export const filiereModules = {
             number: 1,
             title: "Théorie de l'information",
             pdfPath: getPdfUrl("common/S3", "TI301-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Entropy", "Compression", "Codage"]
           },
           {
             id: "ti301-issic-e2",
             number: 2,
             title: "Traitement du signal",
             pdfPath: getPdfUrl("common/S3", "TI301-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["FFT", "Filtrage", "Échantillonnage"]
           }
         ]
       },
@@ -3717,18 +3015,12 @@ export const filiereModules = {
             number: 1,
             title: "Administration réseau",
             pdfPath: getPdfUrl("filieres/ISC/S3", "ARNQ301-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Configuration", "Monitoring", "Troubleshooting"]
           },
           {
             id: "arnq301-e2",
             number: 2,
             title: "Qualité de service",
             pdfPath: getPdfUrl("filieres/ISC/S3", "ARNQ301-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["QoS", "Priorisation", "Bandwidth"]
           }
         ]
       },
@@ -3748,18 +3040,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion de projet",
             pdfPath: getPdfUrl("common/S3", "PME301-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Méthodes", "Planning", "Ressources"]
           },
           {
             id: "pm-entre301-issic-e2",
             number: 2,
             title: "Entrepreneuriat",
             pdfPath: getPdfUrl("common/S3", "PME301-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Création d'entreprise", "Business plan", "Financement"]
           }
         ]
       },
@@ -3779,18 +3065,12 @@ export const filiereModules = {
             number: 1,
             title: "Communication professionnelle",
             pdfPath: getPdfUrl("common/S3", "AT301-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Présentations", "Rédaction", "Négociation"]
           },
           {
             id: "ang-tec301-issic-e2",
             number: 2,
             title: "Terminologie technique",
             pdfPath: getPdfUrl("common/S3", "AT301-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Vocabulaire", "Traduction", "Documentation"]
           }
         ]
       }
@@ -3812,18 +3092,12 @@ export const filiereModules = {
             number: 1,
             title: "Programmation sécurisée",
             pdfPath: getPdfUrl("filieres/ISC/S4", "PAM401-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Secure coding", "Input validation", "OWASP"]
           },
           {
             id: "pam401-issic-e2",
             number: 2,
             title: "Sécurité des applications mobiles",
             pdfPath: getPdfUrl("filieres/ISC/S4", "PAM401-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Mobile threats", "App security", "Reverse engineering"]
           }
         ]
       },
@@ -3843,18 +3117,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité des services web",
             pdfPath: getPdfUrl("filieres/ISC/S4", "SSA401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Web services", "API security", "OAuth"]
           },
           {
             id: "ssa401-e2",
             number: 2,
             title: "Sécurité des applications",
             pdfPath: getPdfUrl("filieres/ISC/S4", "SSA401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["App security", "Code review", "Penetration testing"]
           }
         ]
       },
@@ -3874,18 +3142,12 @@ export const filiereModules = {
             number: 1,
             title: "Mathématiques discrètes",
             pdfPath: getPdfUrl("filieres/ISC/S4", "MS401-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Théorie des nombres", "Arithmétique", "Logique"]
           },
           {
             id: "ms401-issic-e2",
             number: 2,
             title: "Cryptographie mathématique",
             pdfPath: getPdfUrl("filieres/ISC/S4", "MS401-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RSA", "AES", "Elliptic curves"]
           }
         ]
       },
@@ -3905,18 +3167,12 @@ export const filiereModules = {
             number: 1,
             title: "Apprentissage supervisé",
             pdfPath: getPdfUrl("common/S4", "ML401-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Classification", "Régression", "SVM"]
           },
           {
             id: "ml401-issic-e2",
             number: 2,
             title: "Apprentissage pour la sécurité",
             pdfPath: getPdfUrl("filieres/ISC/S4", "ML401-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Anomaly detection", "Malware detection", "IDS"]
           }
         ]
       },
@@ -3936,18 +3192,12 @@ export const filiereModules = {
             number: 1,
             title: "Sécurité des systèmes répartis",
             pdfPath: getPdfUrl("filieres/ISC/S4", "SRV401-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RPC", "Middleware", "Consistance"]
           },
           {
             id: "srv401-issic-e2",
             number: 2,
             title: "Sécurité de la virtualisation",
             pdfPath: getPdfUrl("filieres/ISC/S4", "SRV401-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["VM", "Conteneurs", "Orchestration"]
           }
         ]
       },
@@ -3967,18 +3217,12 @@ export const filiereModules = {
             number: 1,
             title: "Cryptographie symétrique",
             pdfPath: getPdfUrl("filieres/ISC/S4", "IC401-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["DES", "AES", "Modes"]
           },
           {
             id: "ic401-issic-e2",
             number: 2,
             title: "Cryptographie asymétrique",
             pdfPath: getPdfUrl("filieres/ISC/S4", "IC401-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RSA", "ECC", "Signatures"]
           }
         ]
       },
@@ -3998,18 +3242,12 @@ export const filiereModules = {
             number: 1,
             title: "Gestion des identités",
             pdfPath: getPdfUrl("filieres/ISC/S4", "GIA401-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["LDAP", "Active Directory", "SSO"]
           },
           {
             id: "gia401-e2",
             number: 2,
             title: "Contrôle d'accès",
             pdfPath: getPdfUrl("filieres/ISC/S4", "GIA401-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["RBAC", "ABAC", "MAC"]
           }
         ]
       },
@@ -4029,18 +3267,12 @@ export const filiereModules = {
             number: 1,
             title: "Politiques de sécurité",
             pdfPath: getPdfUrl("filieres/ISC/S4", "MS401-ISC-E1.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Politiques", "Procédures", "Normes"]
           },
           {
             id: "ms401-issic-e2",
             number: 2,
             title: "Gestion des incidents",
             pdfPath: getPdfUrl("filieres/ISC/S4", "MS401-ISC-E2.pdf"),
-            pages: 0,
-            fileSize: "",
-            topics: ["Incidents", "Crise", "Restauration"]
           }
         ]
       }
@@ -4080,18 +3312,12 @@ export const getModulesBySemester = (semester: number, filiere: string | null = 
             number: 1,
             title: "Guide du PFE",
             pdfPath: getPdfUrl("pfe", "PFE-Guidelines.pdf"),
-            pages: 45,
-            fileSize: "2.1 MB",
-            topics: ["Modalités", "Calendrier", "Évaluation"]
           },
           {
             id: "pfe-template",
             number: 2,
             title: "Modèle de rapport",
             pdfPath: getPdfUrl("pfe", "PFE-Template.pdf"),
-            pages: 32,
-            fileSize: "1.8 MB",
-            topics: ["Format", "Structure", "Bibliographie"]
           }
         ]
       }
