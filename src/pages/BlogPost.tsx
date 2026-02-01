@@ -112,7 +112,7 @@ const BlogPost = () => {
               <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mr-3">
                 <User className="h-4 w-4" />
               </div>
-              <span className="font-medium text-gray-900">{post.author}</span>
+              <span className="font-medium text-gray-900">ESI Student</span>
             </div>
             <div className="flex items-center">
               <Calendar className="h-4 w-4 mr-2 text-gray-400" />

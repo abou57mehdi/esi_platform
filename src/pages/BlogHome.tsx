@@ -223,7 +223,7 @@ const BlogHome = () => {
                         </div>
                       </div>
                     </div>
-                    <span className="text-sm font-bold text-gray-700 font-sans">{post.author}</span>
+                    <span className="text-sm font-bold text-gray-700 font-sans">ESI Student</span>
                   </div>
                   
                   <span className="w-8 h-8 rounded-full bg-[#F8FBFF] flex items-center justify-center text-[#1E5B8C] group-hover:bg-[#1E5B8C] group-hover:text-white transition-all duration-300">

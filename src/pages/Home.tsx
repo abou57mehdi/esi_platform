@@ -41,18 +41,7 @@ const Home = () => {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex justify-between items-start">
-             {/* Logo/Brand Area */}
-             <div className="flex items-center gap-4 mb-8">
-                <div className="bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                   <img 
-                    src="/assets/images/esi_traingle.png" 
-                    alt="ESI Logo" 
-                    className="h-12 w-12 object-contain"
-                  />
-                </div>
-             </div>
-
+          <div className="flex justify-end items-start">
              {/* Filière Badge if selected */}
              {filiereInfo && (
               <div 
@@ -72,12 +61,19 @@ const Home = () => {
           </div>
 
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight relative inline-block">
-              Plateforme ESI
-              <span className="absolute bottom-2 left-0 w-full h-3 bg-[#4A90E2] -z-10 transform -rotate-1"></span>
-            </h1>
+            <div className="flex items-center gap-4 mb-6">
+               <img 
+                src="/assets/images/esi_traingle.png" 
+                alt="ESI Logo" 
+                className="h-10 w-10 md:h-14 md:w-14 object-contain"
+              />
+              <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight relative inline-block">
+                Plateforme ESI
+                <span className="absolute bottom-2 left-0 w-full h-3 bg-[#4A90E2] -z-10 transform -rotate-1"></span>
+              </h1>
+            </div>
             <p className="text-xl md:text-2xl text-blue-100 max-w-2xl font-light">
-              Accédez à tous vos résumés de modules pour le cycle d'ingénieur à l'École Supérieure d'Informatique.
+              Accédez à tous vos résumés de modules pour le cycle d'ingénieur à l'École des Sciences de l'Information.
             </p>
           </div>
         </div>
