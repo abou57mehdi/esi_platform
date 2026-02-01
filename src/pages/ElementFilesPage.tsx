@@ -81,19 +81,18 @@ const ElementFilesPage = () => {
 
         let foundFiles: ManifestFile[] = [];
         matchingKeys.forEach(key => {
-          const filesInDir = manifest[key].map(f => ({
+          const filesInDir = manifest[key].map((f: ManifestFile) => ({
             ...f,
             path: f.path.startsWith('http') ? f.path : `${GITHUB_PAGES_BASE_URL}/${f.path}`
           }));
           foundFiles = [...foundFiles, ...filesInDir];
         });
 
-        // If no files found in eltX folder, try looking in the module base folder as a fallback
         if (foundFiles.length === 0) {
           console.log(`[Debug] No files in ${elementSpecificPath}, checking base folder: ${moduleBasePath}`);
           const baseKeys = manifestKeys.filter(key => key === moduleBasePath);
           baseKeys.forEach(key => {
-            const filesInDir = manifest[key].map(f => ({
+            const filesInDir = manifest[key].map((f: ManifestFile) => ({
               ...f,
               path: f.path.startsWith('http') ? f.path : `${GITHUB_PAGES_BASE_URL}/${f.path}`
             }));
