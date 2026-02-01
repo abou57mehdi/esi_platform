@@ -47,7 +47,10 @@ const ElementFilesPage = () => {
 
   useEffect(() => {
     const fetchFiles = async () => {
-      if (!module || !element) return;
+      if (!module || !element) {
+        setLoading(false);
+        return;
+      }
 
       try {
         setLoading(true);
@@ -110,7 +113,7 @@ const ElementFilesPage = () => {
     };
 
     fetchFiles();
-  }, [module, element, semester, selectedFiliere]);
+  }, [moduleId, elementId, semester, selectedFiliere]); // Use primitives to prevent infinite loops
 
   const handleView = (filePath: string) => {
     window.open(filePath, '_blank');

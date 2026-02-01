@@ -1,51 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { FiliereProvider } from './context/FiliereContext';
-import Home from './pages/Home';
-import SemesterView from './pages/SemesterView';
-import ModuleView from './pages/ModuleView';
-import FiliereSelection from './pages/FiliereSelection';
-import ElementFilesPage from './pages/ElementFilesPage';
-import BlogHome from './pages/BlogHome';
-import BlogPost from './pages/BlogPost';
-import InternshipPage from './pages/InternshipPage';
-import ViewPdfPage from './pages/ViewPdfPage';
-import NotFound from './pages/NotFound';
 import LoadingSpinner from './components/LoadingSpinner';
 
+// Lazy load pages
+const Home = React.lazy(() => import('./pages/Home'));
+const SemesterView = React.lazy(() => import('./pages/SemesterView'));
+const ModuleView = React.lazy(() => import('./pages/ModuleView'));
+const FiliereSelection = React.lazy(() => import('./pages/FiliereSelection'));
+const ElementFilesPage = React.lazy(() => import('./pages/ElementFilesPage'));
+const BlogHome = React.lazy(() => import('./pages/BlogHome'));
+const BlogPost = React.lazy(() => import('./pages/BlogPost'));
+const InternshipPage = React.lazy(() => import('./pages/InternshipPage'));
+const ViewPdfPage = React.lazy(() => import('./pages/ViewPdfPage'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate loading time for demonstration
-    // In a real app, this could be replaced with actual loading logic
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // 2 seconds loading simulation
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingSpinner />;
-  }
-
   return (
     <FiliereProvider>
       <Router>
         <div className="App">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/semester/:semesterNumber" element={<SemesterView />} />
-            <Route path="/semester/:semesterNumber/module/:moduleId" element={<ModuleView />} />
-            <Route path="/semester/:semesterNumber/module/:moduleId/element/:elementId" element={<ElementFilesPage />} />
-            <Route path="/select-filiere" element={<FiliereSelection />} />
-            <Route path="/blog" element={<BlogHome />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/stages" element={<InternshipPage />} />
-            <Route path="/view-pdf" element={<ViewPdfPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<LoadingSpinner />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/semester/:semesterNumber" element={<SemesterView />} />
+              <Route path="/semester/:semesterNumber/module/:moduleId" element={<ModuleView />} />
+              <Route path="/semester/:semesterNumber/module/:moduleId/element/:elementId" element={<ElementFilesPage />} />
+              <Route path="/select-filiere" element={<FiliereSelection />} />
+              <Route path="/blog" element={<BlogHome />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/stages" element={<InternshipPage />} />
+              <Route path="/view-pdf" element={<ViewPdfPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </div>
       </Router>
     </FiliereProvider>
