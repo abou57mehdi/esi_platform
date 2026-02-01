@@ -8,6 +8,8 @@ import FiliereSelection from './pages/FiliereSelection';
 import ElementFilesPage from './pages/ElementFilesPage';
 import BlogHome from './pages/BlogHome';
 import BlogPost from './pages/BlogPost';
+import InternshipPage from './pages/InternshipPage';
+import ViewPdfPage from './pages/ViewPdfPage';
 import NotFound from './pages/NotFound';
 import LoadingSpinner from './components/LoadingSpinner';
 
@@ -40,6 +42,8 @@ function App() {
             <Route path="/select-filiere" element={<FiliereSelection />} />
             <Route path="/blog" element={<BlogHome />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/stages" element={<InternshipPage />} />
+            <Route path="/view-pdf" element={<ViewPdfPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

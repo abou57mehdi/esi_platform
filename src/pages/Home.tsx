@@ -3,7 +3,7 @@ import { useFiliereContext } from '../context/FiliereContext';
 import { filieres } from '../data/filieres';
 import SemesterCard from '../components/SemesterCard';
 import { useNavigate } from 'react-router-dom';
-import { Search, Star, BookOpen, ArrowRight } from 'lucide-react';
+import { Search, Star, BookOpen, ArrowRight, Briefcase } from 'lucide-react';
 
 const Home = () => {
   const { selectedFiliere } = useFiliereContext();
@@ -128,6 +128,85 @@ const Home = () => {
               filiereSelected={!!selectedFiliere}
             />
           ))}
+
+          {/* Internship Card */}
+          <div
+            onClick={() => navigate('/stages')}
+            className="
+              relative group bg-white shadow-sm hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer
+            "
+            style={{
+              borderRadius: '4px',
+              backgroundImage: 'linear-gradient(#fdfdfd 2px, transparent 2px), linear-gradient(90deg, #fdfdfd 2px, transparent 2px)',
+              backgroundSize: '40px 40px',
+              backgroundPosition: '-2px -2px'
+            }}
+          >
+            {/* Folded Corner Effect */}
+            <div 
+              className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-bl from-[#ececec] to-white shadow-md z-20"
+              style={{ 
+                clipPath: 'polygon(0 0, 100% 100%, 0 100%)',
+                background: `linear-gradient(45deg, #fff 0%, #fff 49%, #ccc 50%, #fff 51%, #fff 100%)` 
+              }}
+            ></div>
+            <div className="absolute top-0 right-0 w-12 h-12 bg-emerald-500 -z-10"></div>
+
+            {/* Header Image Area */}
+            <div className="relative p-4 pb-0">
+              <div className="absolute inset-0 bg-emerald-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg transform scale-105 rotate-1"></div>
+              
+              <div className="h-40 overflow-hidden rounded-sm border-4 border-white shadow-inner relative z-10 bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-500">
+                <div className="absolute inset-0 opacity-20" 
+                     style={{backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '16px 16px'}}>
+                </div>
+                
+                <div className="text-white drop-shadow-md transform group-hover:scale-110 transition-transform duration-500">
+                   <Briefcase className="h-16 w-16" />
+                </div>
+              </div>
+              
+              {/* Ribbon Tag */}
+              <div className="absolute top-8 left-2 z-20 flex">
+                <div className="bg-emerald-500 text-white text-xs font-bold px-3 py-1.5 shadow-md relative">
+                  Professional
+                  <div className="absolute top-0 right-0 -mr-2 w-0 h-0 border-t-[14px] border-t-transparent border-l-[8px] border-l-emerald-500 border-b-[14px] border-b-transparent brightness-75"></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-6 pt-4">
+              <div className="flex items-center text-gray-400 text-xs mb-3 font-medium font-mono tracking-tight">
+                <Star className="h-3.5 w-3.5 mr-2 text-emerald-500" />
+                <span>Career & Experience</span>
+              </div>
+              
+              <h2 className="text-2xl font-serif font-bold text-gray-800 mb-3 leading-tight group-hover:text-emerald-600 transition-colors">
+                Rapports de Stage
+              </h2>
+              
+              <p className="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed font-light">
+                Consult the internship reports of your peers. Learn about the missions, tools, and professional environments.
+              </p>
+
+              <div className="pt-4 border-t-2 border-dashed border-gray-100 flex items-center justify-between mt-auto relative z-10">
+                <div className="flex items-center group/author">
+                  <div className="relative mr-3">
+                    <div className="w-8 h-8 rounded-full border border-gray-200 p-0.5 group-hover/author:border-emerald-400 transition-colors">
+                      <div className="w-full h-full bg-emerald-50 rounded-full flex items-center justify-center text-emerald-500">
+                         <Briefcase className="h-4 w-4" />
+                      </div>
+                    </div>
+                  </div>
+                  <span className="text-xs font-bold text-gray-500 font-sans">View Reports</span>
+                </div>
+                
+                <span className="w-8 h-8 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-500 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
+                  <ArrowRight className="h-4 w-4" />
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
