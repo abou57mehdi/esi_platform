@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Calendar, User, ArrowRight, ArrowLeft, Search, Tag, Star } from 'lucide-react';
 import { GITHUB_PAGES_BASE_URL } from '../utils/r2Config';
+import Fuse from 'fuse.js';
 
 interface BlogPost {
   slug: string;
@@ -44,10 +45,14 @@ const BlogHome = () => {
     e.currentTarget.src = DEFAULT_IMAGE;
   };
 
-  const filteredPosts = posts.filter(post => 
-    post.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-    post.category.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const fuse = new Fuse(posts, {
+    keys: ['title', 'description', 'category', 'author'],
+    threshold: 0.3,
+  });
+
+  const filteredPosts = searchTerm
+    ? fuse.search(searchTerm).map(result => result.item)
+    : posts;
 
   if (loading) {
     return (
