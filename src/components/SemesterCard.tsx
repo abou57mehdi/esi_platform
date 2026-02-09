@@ -26,37 +26,37 @@ const SemesterCard = ({ semester, requiresFiliere = false, filiereSelected = fal
         return { 
           year: "1CS", 
           desc: "Common Core - Year 1",
-          color: "text-blue-500",
-          bgColor: "bg-blue-500",
-          lightBg: "bg-blue-50",
-          gradient: "from-blue-400 to-blue-600"
+          color: "text-emerald-500",
+          bgColor: "bg-emerald-500",
+          lightBg: "bg-emerald-50",
+          gradient: "from-emerald-400 to-emerald-600"
         };
       case 2:
         return { 
           year: "1CS", 
           desc: "Common Core - Year 1",
-          color: "text-indigo-500",
-          bgColor: "bg-indigo-500",
-          lightBg: "bg-indigo-50",
-          gradient: "from-indigo-400 to-indigo-600"
+          color: "text-amber-500",
+          bgColor: "bg-amber-500",
+          lightBg: "bg-amber-50",
+          gradient: "from-amber-400 to-amber-600"
         };
       case 3:
         return { 
           year: "2CS", 
           desc: "Common Core - Year 2",
-          color: "text-purple-500",
-          bgColor: "bg-purple-500",
-          lightBg: "bg-purple-50",
-          gradient: "from-purple-400 to-purple-600"
+          color: "text-emerald-600",
+          bgColor: "bg-emerald-600",
+          lightBg: "bg-emerald-50",
+          gradient: "from-emerald-500 to-emerald-700"
         };
       case 4:
         return { 
           year: "2CS", 
           desc: "Common Core - Year 2",
-          color: "text-cyan-500",
-          bgColor: "bg-cyan-500",
-          lightBg: "bg-cyan-50",
-          gradient: "from-cyan-400 to-cyan-600"
+          color: "text-amber-600",
+          bgColor: "bg-amber-600",
+          lightBg: "bg-amber-50",
+          gradient: "from-amber-500 to-amber-700"
         };
       case 5:
         return { 
